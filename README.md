@@ -14,6 +14,5 @@ git clone https://github.com/alexellis/funker-node
 
 docker build -t captains-counter .
 
-docker network create --name funker --attachable
 docker service create --name HelloIntent --network funker captains-counter
 ```

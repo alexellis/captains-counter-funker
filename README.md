@@ -1,5 +1,5 @@
-# helloworldintent-funker
-A sample funker function for the space agency skill.
+# captains-counter-funker
+A sample funker function to count the total number of Docker captains.
 
 Use this with [funker-dispatch](https://github.com/alexellis/funker-dispatch)
 
@@ -7,12 +7,12 @@ Usage:
 ======
 
 ```
-git clone https://github.com/alexellis/helloworldintent-funker
-cd helloworldintent-funker
+git clone https://github.com/alexellis/captains-counter-funker
+cd captains-counter-funker
 git clone https://github.com/alexellis/funker-node
 
-docker build -t helloworldintent .
+docker build -t captains-counter-funker .
 
 docker network create --name funker --attachable
-docker service create --name HelloIntent --network funker helloworldintent
+docker service create --name CaptainsIntent --network funker captains-counter-funker
 ```
